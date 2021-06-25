@@ -1,4 +1,7 @@
 // Array.method
+// filter()
+// reduce() : 배열을 기반으로 값 하나를 반환
+// forEach()
 
 // filter()
 let arr1 = [1, 2, 3, 4];
@@ -17,7 +20,7 @@ let arr = number.filter((item, index) =>
 
 console.log(arr);
 
-// reduce()
+// reduce() 배열의 합 계산
 const arr = [1,2,3,4]
 let sum = arr.reduce((acc, cur) => acc + cur, 0)
 
@@ -37,7 +40,7 @@ const alphabet = ['a', 'b', 'c', 'b', 'd'];
 const count = alphabet.reduce((acc, cur) => {
     acc[cur] = (acc[cur] || 0) + 1;
     return acc;
-}, {});
+}, {}); // 초기값에 빈 객체 넣어준다. 
 
 console.log(count); // { a: 1, b: 2, c: 1, d: 1 }
 // 초기값인 빈 객체에 요소값인 cur을 property key로, 요소의 개수를 value로 할당한다. 
