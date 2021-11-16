@@ -41,7 +41,3 @@ for (const val of new Set([1, 2, 3])) {
   console.log(val);
 }
 ```
-
-문자열
-Map
-Set
